@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/searchBackground">
+
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_bar_height"
+            android:hint="@string/hint_search_bar"
+            android:inputType="text"
+            android:singleLine="true"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/ic_search"
+            android:background="@drawable/search_text"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/contactLIstView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@drawable/header_style"
+        android:indicatorRight="50dp"/>
+
+</LinearLayout>
